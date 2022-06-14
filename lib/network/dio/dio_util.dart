@@ -1,13 +1,13 @@
 import 'package:dio/dio.dart';
 import 'dio_setting.dart';
 
-class HttpUtil{
-  static HttpUtil? _instance;
+class DioUtil{
+  static DioUtil? _instance;
   final Map<String,Dio> _map = {};
-  HttpUtil._();
+  DioUtil._();
 
-  static HttpUtil getInstance() {
-    _instance = _instance ?? HttpUtil._();
+  static DioUtil getInstance() {
+    _instance = _instance ?? DioUtil._();
     return _instance!;
   }
 

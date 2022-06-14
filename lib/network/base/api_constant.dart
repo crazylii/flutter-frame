@@ -1,6 +1,6 @@
-const _baseUrlDev = "http://120.55.182.117:8842";
+const _baseUrlDev = "dio://120.55.182.117:8842";
 // const _baseUrlMaster = "http://106.15.9.79:8842";
-const _baseUrlMaster = "http://116.62.224.170:8402";
+const _baseUrlMaster = "dio://116.62.224.170:8402";
 const bool _dev = false;
 const baseUrl = _dev ? _baseUrlDev : _baseUrlMaster;
 
