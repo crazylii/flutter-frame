@@ -1,0 +1,11 @@
+{
+  "helloWorld": "你好",
+  "@helloWorld": {
+    "description": "传统的新程序员打招呼"
+  },
+  "databaseTest": "数据库测试",
+  "fileStoreTest": "文件存储测试",
+  "isolateTest": "工作isolate测试",
+  "longRunningIsolateTest": "长期运行交互式isolate测试",
+  "longRunningUnidirectionalIsolateTest": "长期运行单向isolate测试"
+}
