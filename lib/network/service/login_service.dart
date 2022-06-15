@@ -1,14 +1,14 @@
 import 'package:basic_frame/bean/base_bean.dart';
 import 'package:basic_frame/network/base/api_constant.dart';
-import 'package:basic_frame/network/base/base_service.dart';
+import 'package:basic_frame/network/base/presenter.dart';
 import 'package:basic_frame/util/logger/logger_util.dart';
 import 'package:basic_frame/util/toast.dart';
 
 import '../dio/request.dart';
 ///登录
-class LoginService{
+class LoginService {
   LoginService({this.service});
-  final BaseService? service;
+  final Presenter? service;
 
   Future<BaseBean?> login(
       String username, String password, String registrationId) async {

@@ -1,11 +1,11 @@
-import 'package:basic_frame/network/base/base_service.dart';
+import 'package:basic_frame/network/base/presenter.dart';
 import 'package:basic_frame/network/dio/dio_util.dart';
 import 'package:basic_frame/network/dio/request.dart';
 import 'package:basic_frame/util/logger/logger_util.dart';
 import 'package:dio/dio.dart';
 import 'dart:convert';
 
-class DioService implements BaseService {
+class DioService implements Presenter {
   static const tag = "DioService";
   ///get请求
   @override

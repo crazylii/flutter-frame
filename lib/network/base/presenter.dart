@@ -1,5 +1,5 @@
 ///可拓展service
-abstract class BaseService {
+abstract class Presenter {
 
   ///get请求
   Future get(Object request);

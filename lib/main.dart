@@ -4,7 +4,6 @@ import 'package:basic_frame/isolate/long_running_isolate.dart';
 import 'package:basic_frame/local_store/database/database_util.dart';
 import 'package:basic_frame/local_store/file/file_store.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:sqflite/sqflite.dart';
 
