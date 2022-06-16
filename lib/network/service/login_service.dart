@@ -1,12 +1,13 @@
 import 'package:basic_frame/bean/base_bean.dart';
+import 'package:basic_frame/constant.dart';
 import 'package:basic_frame/network/base/api_constant.dart';
+import 'package:basic_frame/network/base/base_service.dart';
 import 'package:basic_frame/network/base/presenter.dart';
-import 'package:basic_frame/util/logger/logger_util.dart';
-import 'package:basic_frame/util/toast.dart';
-
+import 'package:flutter/foundation.dart';
 import '../dio/request.dart';
+
 ///登录
-class LoginService {
+class LoginService extends BaseService {
   LoginService({this.service});
   final Presenter? service;
 
@@ -17,13 +18,17 @@ class LoginService {
     request.addParam("password", password);
     request.addParam("registrationId", registrationId);
     var data = await service?.get(request); //captcha
-    try {
-      BaseBean baseBean = BaseBean.fromJson(data);
-      return baseBean;
-    } catch(e) {
-      LoggerUtil().e(e);
-      Toast.show('网络状态不好,登录失败，请稍后重试');
+    List params = List.empty(growable: true);
+    final loggPath = await logPath();
+    //添加log路径
+    params.add(loggPath);
+    //添加json
+    params.add(data);
+    //单独Isolate解析json
+    BaseBean? bean = await compute(parseJson, params);
+    if (bean == null) {
+      throw Exception('登录结果json解析失败');
     }
-    return null;
+    return bean;
   }
 }

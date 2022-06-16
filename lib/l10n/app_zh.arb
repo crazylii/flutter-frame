@@ -9,5 +9,6 @@
   "longRunningIsolateTest": "长期运行交互式isolate测试",
   "longRunningUnidirectionalIsolateTest": "长期运行单向isolate测试",
   "widget_wont_rebuild": "该widget不会重建",
-  "color_change": "修改颜色"
+  "color_change": "修改颜色",
+  "login_failed": "网络状态不好,登录失败，请稍后重试"
 }
