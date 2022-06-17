@@ -1,16 +1,11 @@
 # basic_frame
 
-A new Flutter project.
+一个通用的flutter基础架构，用于flutter项目开发快速搭建基础代码框架
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 架构基础功能模块
+1. 多线程管理  
+2. 语言国际化  
+3. 数据库存储、文件缓存、sharedpreference存储  
+4. 网络数据访问模块  
+5. 日志输出模块，控制台和文件输出  
+6. MVVM架构  
